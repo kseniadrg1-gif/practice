@@ -1,12 +1,9 @@
-let str = "abcde";
-let result = "";
+let str = "aaa bbb ccc";
 
-for (let i = 0; i < str.length; i++) {
-  if ((i + 1) % 2 !== 0) {
-    result += str[i].toUpperCase();
-  } else {
-    result += str[i];
-  }
-}
-
+let result = str
+  .split("")
+  .map((word) => {
+    return word[0].toUpperCase() + word.slice(1);
+  })
+  .join("");
 console.log(result);
