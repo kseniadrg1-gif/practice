@@ -1,11 +1,3 @@
-let strings = [
-  "http://site.com",
-  "https://google.html",
-  "http://blog.ru",
-  "ftp://files.net",
-  "http://shop.org",
-  "просто текст",
-  "http://news.com/page",
-];
-let httpSites = strings.filter((str) => str.endsWith(".html"));
-console.log(httpSites);
+let numbers = [4, 5, 6, 7, 8];
+let increased = numbers.map((num) => num * 1.1);
+console.log(increased);
