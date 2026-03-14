@@ -1,13 +1,6 @@
-let str = "123045607890";
-let count = 0;
-let position = -1;
-for (let i = 0; i < str.length; i++) {
-  if (str[i] === "0") {
-    count++;
-    if (count === 3) {
-      position = i;
-      break;
-    }
-  }
-}
-console.log(position);
+let numbers = "12,34,56";
+let sum = numbers
+  .split(",")
+  .map(Number)
+  .reduce((a, b) => a + b, 0);
+console.log(sum);
