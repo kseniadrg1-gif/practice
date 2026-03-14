@@ -1,8 +1,8 @@
-let str = "023m0df0dfg0";
-let position = [];
+let str = "abcdefg";
+let result = "";
 for (let i = 0; i < str.length; i++) {
-  if (str[i] === "0") {
-    position.push(i);
+  if ((i + 1) % 3 !== 0) {
+    result += str[i];
   }
 }
-console.log(position);
+console.log(result);
