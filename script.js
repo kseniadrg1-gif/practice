@@ -1,8 +1,9 @@
-let dateStr = "2025-12-31";
-let [year, month, day] = dateStr.split("-");
-let dateObj = {
-  year: year,
-  month: month,
-  day: day,
-};
-console.log(dateObj);
+let str = "abcd1";
+let position = -1;
+for (let i = 0; i < str.length; i++) {
+  if (str[i] >= 0 && str[i >= 9]) {
+    position = i;
+    break;
+  }
+}
+console.log(position);
