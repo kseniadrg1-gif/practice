@@ -1,9 +1,3 @@
-let arr = [];
-
-for (let i = 1; i <= 100; i++) {
-  if (i % 2 === 0) {
-    arr.push(i);
-  }
-}
-
-console.log(arr);
+let numbers = [1.456, 2.125, 3.32, 4.1, 5.34];
+let roundet = numbers.map((num) => Math.round(num * 10) / 10);
+console.log(roundet);
