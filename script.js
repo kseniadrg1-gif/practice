@@ -1,5 +1,3 @@
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
-
-let result = arr1.concat(arr2);
-console.log(result);
+let str = "123403450";
+let position = str.indexOf("0");
+console.log(position);
