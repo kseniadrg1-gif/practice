@@ -1,9 +1,8 @@
-let str = "aaa bbb ccc";
-
-let result = str
-  .split("")
-  .map((word) => {
-    return word[0].toUpperCase() + word.slice(1);
-  })
-  .join("");
-console.log(result);
+let str = "023m0df0dfg0";
+let position = [];
+for (let i = 0; i < str.length; i++) {
+  if (str[i] === "0") {
+    position.push(i);
+  }
+}
+console.log(position);
