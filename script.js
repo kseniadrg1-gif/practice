@@ -1,5 +1,5 @@
-let arr = [1, 2, 3, 4, 5, 6];
-for (i = 0; i < arr.length; i += 2) {
-  let subArray = [arr[i], arr[i + 1]];
-  console.log(subArray);
-}
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+let result = arr1.concat(arr2);
+console.log(result);
