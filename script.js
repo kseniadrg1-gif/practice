@@ -1,11 +1,6 @@
-for (i = 0; i <= 1000; i++) {
-  let str = String(i);
-  if (str.length >= 2) {
-    let firstDigit = Number(str[0]);
-    let secondDigit = Number(str[1]);
+let arr = [1, 2, 3, 2, 4, 2, 5];
+let valuToRemove = 2;
 
-    if (firstDigit + secondDigit === 5) {
-      console.log(i);
-    }
-  }
-}
+let filtered = arr.filter((item) => item !== valueToRemove);
+console.log(filtered);
+console.log(arr);
