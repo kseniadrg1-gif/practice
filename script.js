@@ -1,10 +1,12 @@
-let numbers = 123456;
-let str = String(num);
-let count = 0;
+let str = "abcde";
+let result = "";
+
 for (let i = 0; i < str.length; i++) {
-  let digit = Number(str[i]);
-  if (digit % 2 === 0) {
-    count++;
+  if ((i + 1) % 2 !== 0) {
+    result += str[i].toUpperCase();
+  } else {
+    result += str[i];
   }
 }
-console.log(count);
+
+console.log(result);
