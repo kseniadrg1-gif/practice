@@ -1,3 +1,11 @@
-let numbers = [1.456, 2.125, 3.32, 4.1, 5.34];
-let roundet = numbers.map((num) => Math.round(num * 10) / 10);
-console.log(roundet);
+let strings = [
+  "http://site.com",
+  "https://google.com",
+  "http://blog.ru",
+  "ftp://files.net",
+  "http://shop.org",
+  "просто текст",
+  "http://news.com/page",
+];
+let httpSites = strings.filter((str) => str.startsWith("http://"));
+console.log(httpSites);
