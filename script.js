@@ -1,8 +1,11 @@
-let arr = [123, 345, 789];
-let reversedArr = [];
-for (i = 0; i < arr.length; i++) {
-  let num = arr[i];
-  let reversedNum = Number(String(num).split("").reverse().join(""));
-  reversedArr.push(reversedNum);
+let str = "1234567";
+let result = "";
+let count = 0;
+for (let i = str.length - 1; i >= 0; i--) {
+  result = str[i] + result;
+  count++;
+
+  if (count % 3 === 0 && i !== 0) {
+    result = "" + result;
+  }
 }
-console.log(reversedArr);
