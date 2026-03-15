@@ -1,12 +1,12 @@
-let str = "aaa bbb ccc eee fff";
-let words = str.split("");
+let str = "a bc def ghij";
+let words = str.split(" ");
 let result = [];
-for (let i = 0; i < str.length; i++) {
-  if (i % 2 === 1) {
-    let word = words[i];
-    let capitalized = word[0].toApperCase() + word.slise(1);
-    result.push(words[i]);
+for (i = 0; i < words.length; i++) {
+  let word = words[i];
+  if (word.length <= 3) {
+    result.push(word.toUpperCase());
+  } else {
+    result.push(word);
   }
 }
-let finalStr = result.join(" ");
-console.log(finalStr);
+console.log(result);
