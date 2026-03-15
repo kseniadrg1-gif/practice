@@ -1,11 +1,11 @@
-let str = "1234567";
+let str = "AbCdE";
 let result = "";
-let count = 0;
-for (let i = str.length - 1; i >= 0; i--) {
-  result = str[i] + result;
-  count++;
-
-  if (count % 3 === 0 && i !== 0) {
-    result = "" + result;
+for (i = 0; i < str.length; i++) {
+  let char = str[i];
+  if (char === char.toUpperCase()) {
+    result += char.toLowerCase();
+  } else {
+    result += char.toUpperCase();
   }
 }
+console.log(result);
