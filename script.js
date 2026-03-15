@@ -1,13 +1,6 @@
-let str = "sdhbHphJjJ";
-let count = 0;
-for (let i = 0; i < str.length; i++) {
-  let char = str[i];
-  if (char >= "A" && char <= "Z") {
-    count++;
-  }
-}
-if (count <= 2) {
-  console.log("В строке не более двух заглавных букв");
-} else {
-  console.log("В строке больше двух заглавных букв");
-}
+let str = "1 22 333 4444 22 5555 1";
+let result = str
+  .split(" ")
+  .filter((word) => word.length <= 3)
+  .join(" ");
+console.log(result);
